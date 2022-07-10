@@ -18,5 +18,6 @@ This is an port of Lenovo Controller by ViRb3 from WPF to new WinUi 3.
 
 7.Select LenovoControls (Package)_1.0.6.0_x86.msixbundle and click Install.
 
+Download: https://github.com/sonic-onkaringale/LenovoControlls/releases/download/beta/LenovoControls.Package._1.0.6.0_Test.zip
 
 
