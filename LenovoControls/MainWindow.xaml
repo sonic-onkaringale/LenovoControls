@@ -1,0 +1,135 @@
+﻿
+    <Window
+    x:Class="LenovoControls.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LenovoControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        
+    mc:Ignorable="d">
+
+
+    <ScrollViewer x:Name="ScrollV">
+    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+        <Image Source="/Assets/Hero_resized.png" Margin="20" Height="400" Width="auto" />
+            <Grid HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+
+            <StackPanel Margin="5,5,20,12" Orientation="Vertical" Grid.Row="0" Grid.Column="0" >
+                <TextBlock
+                    Style="{StaticResource SubtitleTextBlockStyle}"
+                    Margin="0,0,0,12"
+                    Text="Charging" />
+                
+                <RadioButton Margin="12,0,0,5" x:Name="radioConservation" Content="Conservation"
+                                 HorizontalAlignment="Left" VerticalAlignment="Top" Checked="radioBattery_Checked"
+                                 VerticalContentAlignment="Center" />
+                <RadioButton Margin="12,0,0,5" x:Name="radioNormalCharge" Content="Normal"
+                                 HorizontalAlignment="Left" VerticalAlignment="Top" Checked="radioBattery_Checked"
+                                 VerticalContentAlignment="Center" />
+                <RadioButton Margin="12,5" x:Name="radioRapidCharge" Content="Rapid Charge" HorizontalAlignment="Left"
+                                 VerticalAlignment="Top" Checked="radioBattery_Checked"
+                                 VerticalContentAlignment="Center" />
+                </StackPanel>
+
+
+
+            <StackPanel Grid.Row="0" Grid.Column="1" Margin="5,5,20,12" Orientation="Vertical" >
+                <TextBlock
+                    Style="{StaticResource SubtitleTextBlockStyle}"
+                    Margin="0,0,0,12"
+                    Text="Always On USB" />
+                <RadioButton Margin="12,0,0,5" x:Name="radioAlwaysOnUsbOff" Content="Off" HorizontalAlignment="Left"
+                                 VerticalAlignment="Top" Checked="radioAlwaysOnUsb_Checked"
+                                 Unchecked="radioAlwaysOnUsb_Checked" VerticalContentAlignment="Center" />
+                <RadioButton Margin="12,0,0,5" x:Name="radioAlwaysOnUsbOnWhenSleeping" Content="On when sleeping"
+                                 HorizontalAlignment="Left" VerticalAlignment="Top" Checked="radioAlwaysOnUsb_Checked"
+                                 Unchecked="radioAlwaysOnUsb_Checked" VerticalContentAlignment="Center" />
+                <RadioButton Margin="12,5" x:Name="radioAlwaysOnUsbOnAlways" Content="On always"
+                                 HorizontalAlignment="Left" VerticalAlignment="Top" Checked="radioAlwaysOnUsb_Checked"
+                                 Unchecked="radioAlwaysOnUsb_Checked" VerticalContentAlignment="Center" />
+                </StackPanel>
+
+
+
+            <StackPanel Grid.Row="1" Grid.Column="0" Margin="5,5,20,12" Orientation="Vertical">
+                <TextBlock
+                    Style="{StaticResource SubtitleTextBlockStyle}"
+                    Margin="0,0,0,12"
+                    Text="Power Mode" />
+                    <RadioButton Margin="12,0,0,5" x:Name="radioQuiet" Content="Quiet" HorizontalAlignment="Left"
+                                 VerticalAlignment="Top" Checked="radioPowerMode_Checked"
+                                 VerticalContentAlignment="Center" />
+                    <RadioButton Margin="12,0,0,5" x:Name="radioBalance" Content="Balance" HorizontalAlignment="Left"
+                                 VerticalAlignment="Top" Checked="radioPowerMode_Checked"
+                                 VerticalContentAlignment="Center" />
+                <RadioButton Margin="12,5" x:Name="radioPerformance" Content="Performance" HorizontalAlignment="Left"
+                                 VerticalAlignment="Top" Checked="radioPowerMode_Checked"
+                                 VerticalContentAlignment="Center" />
+                </StackPanel>
+
+
+
+            <StackPanel Grid.Row="1" Grid.Column="1" Margin="5,5,20,12" Orientation="Vertical">
+                <TextBlock
+                    Style="{StaticResource SubtitleTextBlockStyle}"
+                    Margin="0,0,0,12"
+                    Text="Miscellaneous" />
+                    <CheckBox Margin="12,0,0,5" x:Name="chkOverDrive" Content="Over Drive" HorizontalAlignment="Left"
+                              VerticalAlignment="Top" Checked="chkOverDrive_Checked" Unchecked="chkOverDrive_Checked"
+                              VerticalContentAlignment="Center" />
+                <CheckBox Margin="12,0,0,5" x:Name="chkFnLock" Content="Fn Lock" HorizontalAlignment="Left"
+                              VerticalAlignment="Top" Checked="chkFnLock_Checked" Unchecked="chkFnLock_Checked"
+                              VerticalContentAlignment="Center" />
+                <CheckBox Margin="12,5" x:Name="chkTouchpadLock" Content="Touchpad Lock" HorizontalAlignment="Left"
+                              VerticalAlignment="Top" Checked="chkTouchpadLock_Checked"
+                              Unchecked="chkTouchpadLock_Checked" VerticalContentAlignment="Center" />
+                </StackPanel>
+            
+        </Grid>
+            <RichTextBlock Margin="10,10,10,10" VerticalAlignment="Top"
+                HorizontalAlignment="Center" >
+                <Paragraph>This App is ported by
+                    <Hyperlink NavigateUri="https://github.com/sonic-onkaringale">
+                        <Run FontStyle="Italic" FontWeight="Bold">Onkar Ingale</Run>.
+
+                    </Hyperlink>
+                    See you with next App.
+                </Paragraph>
+
+            </RichTextBlock>
+            <RichTextBlock Margin="10,10,10,10" VerticalAlignment="Top"
+                HorizontalAlignment="Center" >
+                <Paragraph>A Huge Thanks 
+                    ,
+                    <Hyperlink NavigateUri="https://github.com/ViRb3">
+                        <Run FontStyle="Italic" FontWeight="Bold">ViRb3</Run>
+                        
+                    </Hyperlink> 
+                    For Creating This Base Controller.
+                </Paragraph>
+               
+            </RichTextBlock>
+            <Button Margin="10,10,10,10" Padding="30,5,30,5" Content="Refresh" VerticalAlignment="Top"
+                HorizontalAlignment="Center" Click="btnRefresh_Click" />
+            <InfoBar
+                Margin="10,10,10,10"
+    IsOpen="True"
+    Severity="Success"
+    Title="Hello Good People"
+    Message="As my first Windows App this is an port of WPFUI to WinUi3. Hope so you Enjoy it." Width="700" />
+        </StackPanel>
+    </ScrollViewer>
+</Window>
