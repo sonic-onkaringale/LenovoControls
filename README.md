@@ -1,4 +1,4 @@
-# LenovoControlls
+# LenovoControls
 This is an port of Lenovo Controller by ViRb3 from WPF to new WinUi 3.
 
 <img width="1271" alt="Screenshot 2022-07-10 205128" src="https://user-images.githubusercontent.com/56813792/178154291-6c60c2c5-732a-49c4-8d5f-31b4c659dac1.png">
